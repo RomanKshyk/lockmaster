@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    padding-inline: 40px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(to right,
+    rgb(0, 0, 0, 0.9),
+    rgb(0, 0, 0, 0.6)),
+    url(../images/header-bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.header__nav {
+    padding-block: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 160px;
+}
+
+.header__menu-item:hover {
+    color: #700019;
+    cursor: pointer;
+}
+
+.header__phone:hover {
+    color: #700019;
+    cursor: pointer;
+}
+
+.header__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-block: 120px;
+}
+
+.header__title {
+    font-size: 42px;
+    max-width: 580px;
+    margin-bottom: 16px;
+}
+
+.header__description {
+    max-width: 450px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.header__burger {
+    display: none;
+}
+
+.form {
+    display: flex;
+    gap: 0;
+}
+
+.form__input {
+    padding-inline: 20px;
+    height: 45px;
+    font-size: 16px;
+    border: 1px solid #700019;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+}
+.sidebar:target {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+}
+.sidebar:has(.body:target) {
+    overflow: hidden;
+}
+
+.btn {
+    padding: 12px 40px;
+    max-width: 300px;
+    background-color: #700019;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #700019;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #700019;
+}
+
+.service {
+    padding-block: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.service__title {
+    text-align: center;
+    font-size: 38px;
+}
+
+.service__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.service__item {
+    text-align: center;
+    flex-basis: 1;
+}
+
+.service__item-icon {
+    color: #700019;
+    font-size: 64px;
+}
+
+.contacts {
+    padding-block: 60px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+    width: 100%;
+}
+
+.contacts__map {
+    width: 60%;
+}
+
+.contacts__map iframe {
+    width: 100%;
+    height: 360px;
+    border: none;
+}
+
+.contacts__title {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0, 0.9);
+    padding-block: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: block;
+        background-color: #fff;
+        height: 100vh;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: auto;
+    }
+    .sidebar__top {
+    padding-block: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    }
+
+    .sidebar__menu {
+        padding: 20px 0;
+    }
+
+    .sidebar__menu-item {
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.8);
+        margin-bottom: 20px;
+    }
+    .sidebar__menu-item:hover {
+        border-bottom: 1px solid #700019;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__nav {
+        font-size: 16px;
+    }
+    .header__phone{
+        display: none;
+    }
+    .header__burger {
+        display: block;
+    }
+    .header__banner {
+        margin-block: 80px;
+    }
+    .form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form__input {
+        text-align: center;
+    }
+    .service__list {
+        grid-template-columns: 1fr;
+    }
+    .contacts {
+        flex-direction: column;
+    }
+    .contacts__map {
+        width: 100%;
+    }
+    .btn {
+        max-width: 100%;
+    }
+}

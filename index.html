@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LockMasterLviv</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" href="./images/logo.png">
+</head>
+<body class="page" id="home">
+    <header class="header">
+        <nav class="header__nav container">
+            <a href="#home">
+                <img class="header__logo logo" src="./images/logo.png" alt="Logo">
+            </a>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#home">Про нас</a></li>
+                <li class="header__menu-item"><a href="#service">Послуги</a></li>
+                <li class="header__menu-item"><a href="#contacts">Контакти</a></li>
+            </ul>
+            <div class="header__phone">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:380633191935">+ 38 (063) 31-91-935</a>
+            </div>
+            <a class="header__burger" href="#sidebar">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    
+        <div class="header__banner container">
+            <h1 class="header__title">Аварійне відкриття дверей у Львові та області</h1>
+            <p class="header__description">Потрібно терміново відкрити замок чи машину?<br>Наша компанія готова здійснити екстренне аварійне відкриття замків дверей чи автомобілів будь-якої марки без пошкоджень.</p>
+            <form action="#" class="form">
+                <input 
+                    class="form__input" 
+                    required type="text" 
+                    id="phone2" 
+                    name="phone" 
+                    spellcheck="false" 
+                    placeholder="Введіть телефон"
+                >
+                <button class="form__button btn" type="submit">Викликaти майстра</button>
+            </form>
+        </div>
+    </header>
+
+    <aside class="sidebar container" id="sidebar">
+        <div class="sidebar__top">
+            <a href="#home">
+                <img class="sidebar__logo logo" src="./images/logo.png" alt="Logo">
+            </a>
+              <a class="sidebar__close" href="#home"><i class="fa-solid fa-xmark"></i></a>
+              </div>
+            <ul class="sidebar__menu">
+                <li class="sidebar__menu-item"><a href="#">Про нас</a></li>
+                <li class="sidebar__menu-item"><a href="#service">Послуги</a></li>
+                <li class="sidebar__menu-item"><a href="#contacts">Контакти</a></li>
+            </ul>
+            <div class="sidebar__phone">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:380633191935">+ 38 (063) 31-91-935</a>
+              </div>
+        </nav>
+    </aside>
+
+        <main>
+            <section class="service container" id="service">
+                <h2 class="service__title">Послуги</h2>
+                <div class="service__list">
+                    <article class="service__item">
+                        <i class="service__item-icon fa-solid fa-key"></i>
+                        <h3>Аварійне відкриття дверних замків</h3>
+                        <p>Надання швидкої допомоги у відкриванні дверей у житлових приміщеннях.</p>
+                        <p>від 500 грн</p>
+                    </article>
+                    <article class="service__item">
+                        <i class="service__item-icon fa-solid fa-screwdriver-wrench"></i>
+                        <h3>Аварійне відкриття авто</h3>
+                        <p>Аварійне відкривання дверей будь-якої складності без пошкодження дверного полотна </p>
+                        <p>від 400 грн</p>
+                    </article>
+                    <article class="service__item">
+                        <i class="service__item-icon fa-solid fa-unlock-keyhole"></i>
+                        <h3>Відкриття сейфів</h3>
+                        <p>Розблокування сейфів, надання консультацій та послуг з відновлення доступу до цінних речей та документів.</p>
+                        <p>від 700 грн</p>
+                    </article>
+                </div>
+                <form action="#" class="form">
+                    <input class="form__input" required type="text" id="phone" name="phone" placeholder="Телефон">
+                    <button class="form__button btn" type="submit">Викликaти майстра</button>
+                </form>
+            </section>
+
+            <section class="contacts container" id="contacts">
+                    <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2572.880098518676!2d24.024765999999996!3d49.8447104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add731163c6b5%3A0x75cd03193e9efe88!2z0LLRg9C70LjRhtGPINCT0L7RgNC-0LTQvtGG0YzQutCwLCAyLCDQm9GM0LLRltCyLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDc5MDAw!5e0!3m2!1suk!2sua!4v1705324956999!5m2!1suk!2sua"></iframe>
+                    </div>
+                    <div class="contacts__data">
+                        <h2 class="contacts__title">Контакти</h2>
+                        <h3>Адресa</h3>
+                            <p>м. Львів, вул. Городоцька 2</p>
+                        <h3>Графік роботи</h3>
+                            <p>Понеділок - Субота: 10:00 - 19:00</p>
+                            <p>Неділя: вихідний</p>
+                        <h3 class="data-title">Телефон</h3>
+                        <a href="tel:12345678900">+ 38 (063) 31-91-935</a>
+                    </div>  
+            </section>   
+        </main>
+
+        <footer class="footer">2024 © LockMasterLviv</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
