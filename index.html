@@ -39,14 +39,7 @@
                 <a href="tel:380633191935">+ 38 (063) 31-91-935</a>
             </div>
             <form action="#" class="form">
-                <input 
-                    class="form__input" 
-                    required type="text" 
-                    id="phone2" 
-                    name="phone" 
-                    spellcheck="false" 
-                    placeholder="Введіть телефон"
-                >
+                <input class="form__input" required type="text" id="phone" name="phone" placeholder="Телефон" onclick="addPrefix()">
                 <button class="form__button btn" type="submit">Викликaти майстра</button>
             </form>
             <p class="banner__text">Залиште номер і ми Вам
@@ -97,7 +90,7 @@
                     </article>
                 </div>
                 <form action="#" class="form">
-                    <input class="form__input" required type="text" id="phone" name="phone" placeholder="Телефон">
+                    <input class="form__input" required type="text" id="phone" name="phone" placeholder="Телефон" onclick="addPrefix()">
                     <button class="form__button btn" type="submit">Викликaти майстра</button>
                 </form>
             </section>

@@ -6,15 +6,22 @@ form.addEventListener('submit', function(e) {
 })
 
 async function sendMessage() {
-    const chatId = '@LockMasterRoman_bot';
-    const url = 'https://api.telegram.org/6497401191:AAHBF7eyj-ahxqFX6PFBfeoxvSSBIdLCHMU/sendMessage?"';
+    const chatId = '@lockmaistelviv';
+    const url = 'https://api.telegram.org/bot6497401191:AAHBF7eyj-ahxqFX6PFBfeoxvSSBIdLCHMU/sendMessage?"';
     const phone = document.getElementById("phone").value || document.getElementById("phone2").value
     const formData = new FormData();
     formData.append('chat_id', chatId)
     formData.append('text', phone)
       const response = await fetch(url, {
                 method: 'POST',
-                body:     formData
+                body: formData
             })
-            console.log(response)
+}
+
+function addPrefix() {
+    let phoneInput = document.getElementById('phone2') || document.getElementById('phone');
+
+    if (!phoneInput.value.startsWith('+380')) {
+        phoneInput.value = '+380';
+    }
 }
