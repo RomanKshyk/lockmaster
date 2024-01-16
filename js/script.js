@@ -20,7 +20,7 @@ async function sendMessage() {
                 body: formData
             })
     if (response.ok) {
-        input.value = ''
+        input1.value = ''
         input2.value = ''
     }
 }
@@ -31,9 +31,4 @@ function addPrefix(id) {
     if (!phoneInput.value.startsWith('+380')) {
         phoneInput.value = Number('+380');
     }
-}
-
-function maxLengthCheck(id){
-    const inp = document.getElementById(id)
-  if (inp.value.length > inp.maxLength) inp.value = inp.value.slice(0, inp.maxLength)
 }
