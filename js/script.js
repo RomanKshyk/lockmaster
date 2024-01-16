@@ -5,10 +5,13 @@ form.addEventListener('submit', function(e) {
     sendMessage()
 })
 
+const input1 = document.getElementById("phone")
+const input2 = document.getElementById("phone2")
+
 async function sendMessage() {
     const chatId = '@lockmaistelviv';
     const url = 'https://api.telegram.org/bot6497401191:AAHBF7eyj-ahxqFX6PFBfeoxvSSBIdLCHMU/sendMessage?"';
-    const phone = document.getElementById("phone").value || document.getElementById("phone2").value
+    const phone = input1.value || input2.value
     const formData = new FormData();
     formData.append('chat_id', chatId)
     formData.append('text', phone)
@@ -16,12 +19,21 @@ async function sendMessage() {
                 method: 'POST',
                 body: formData
             })
+    if (response.ok) {
+        input.value = ''
+        input2.value = ''
+    }
 }
 
-function addPrefix() {
-    let phoneInput = document.getElementById('phone2') || document.getElementById('phone');
+function addPrefix(id) {
+    const phoneInput = document.getElementById(id);
 
     if (!phoneInput.value.startsWith('+380')) {
-        phoneInput.value = '+380';
+        phoneInput.value = Number('+380');
     }
+}
+
+function maxLengthCheck(id){
+    const inp = document.getElementById(id)
+  if (inp.value.length > inp.maxLength) inp.value = inp.value.slice(0, inp.maxLength)
 }
