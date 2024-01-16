@@ -6,8 +6,8 @@ form.addEventListener('submit', function(e) {
 })
 
 async function sendMessage() {
-    const chatId = '@lmlviv_bot';
-    const url = 'https://api.telegram.org/bot6634908019:AAGEZvDd_App23zyfQB7jMhiYGeAyk60w34/sendMessage?"';
+    const chatId = '@LockMasterRoman_bot';
+    const url = 'https://api.telegram.org/6497401191:AAHBF7eyj-ahxqFX6PFBfeoxvSSBIdLCHMU/sendMessage?"';
     const phone = document.getElementById("phone").value || document.getElementById("phone2").value
     const formData = new FormData();
     formData.append('chat_id', chatId)
