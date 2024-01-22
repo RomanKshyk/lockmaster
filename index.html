@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LockMasterLviv</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PMLG83KF');</script>
+    <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +19,10 @@
 <link rel="icon" href="./images/logo.png">
 </head>
 <body class="page" id="home">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMLG83KF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="header">
         <nav class="header__nav container">
             <a href="#home">
@@ -22,21 +33,41 @@
                 <li class="header__menu-item"><a href="#service">Послуги</a></li>
                 <li class="header__menu-item"><a href="#contacts">Контакти</a></li>
             </ul>
-            <div class="header__phone">
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:380633191935">+ 38 (063) 31-91-935</a>
+            <div class="header__contacts">
+                <div class="header__phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:380633191935">+ 38 (063) 31-91-935</a>
+                </div>
+                <div class="header__socials">
+                    <a href="viber://chat?number=%2B380633191935">
+                        <i class="fa-brands fa-viber"></i>
+                    </a>
+                    <a href="https://t.me/lockmaster1">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+                <a class="header__burger" href="#sidebar">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
-            <a class="header__burger" href="#sidebar">
-                <i class="fa-solid fa-bars"></i>
-            </a>
         </nav>
     
         <div class="header__banner container">
             <h1 class="header__title">Аварійне відкриття дверей у Львові та області</h1>
             <p class="header__description">Потрібно терміново відкрити замок чи машину?<br>Наша компанія готова здійснити екстренне аварійне відкриття замків дверей чи автомобілів будь-якої марки без пошкоджень.</p>
-            <div class="banner__phone">
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:+380633191935">+ 38 (063) 31-91-935</a>
+            <div class="banner__contacts">
+                <div class="banner__phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+380633191935">+ 38 (063) 31-91-935</a>
+                </div>
+                <div class="banner__socials">
+                    <a href="viber://chat?number=%2B380633191935">
+                        <i class="fa-brands fa-viber"></i>
+                    </a>
+                    <a href="https://t.me/lockmaster1">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
             </div>
             <form action="#" class="form">
                 <input class="form__input" required type="tel" id="phone" name="phone" placeholder="Телефон" onclick='addPrefix("phone")' pattern="(\+380|380|0)[0-9]{9}">
@@ -62,7 +93,7 @@
             <div class="sidebar__phone">
                 <i class="fa-solid fa-phone"></i>
                 <a href="tel:+380633191935">+ 38 (063) 31-91-935</a>
-              </div>
+            </div>
         </nav>
     </aside>
 
