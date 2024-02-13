@@ -168,19 +168,31 @@ i:hover{
 }
 
 .service__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.service__item {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-basis: 1;
 }
 
-.service__item {
-    text-align: center;
-    flex-basis: 1;
+.service__item img{
+    width: 400px;
+    height: 280px;
+    object-fit: cover;
+}
+
+.service__item p{
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .service__item-icon {
     color: #700019;
-    font-size: 64px;
+    font-size: 36px;
 }
 
 .contacts {
