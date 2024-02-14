@@ -320,6 +320,11 @@ i:hover{
         gap: 12px;
         margin-bottom: 12px;
     }
+
+    .service__item img{
+        width: 100%;
+    }
+
     .form {
         flex-direction: column;
         gap: 10px;
