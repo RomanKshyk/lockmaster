@@ -137,6 +137,41 @@ i:hover {
   gap: 0;
 }
 
+.form1 {
+  display: flex;
+  gap: 0;
+}
+
+.form2 {
+  display: flex;
+  gap: 0;
+}
+
+.form3 {
+  display: flex;
+  gap: 0;
+}
+
+.form4 {
+  display: flex;
+  gap: 0;
+}
+
+.form5 {
+  display: flex;
+  gap: 0;
+}
+
+.form6 {
+  display: flex;
+  gap: 0;
+}
+
+.form7 {
+  display: flex;
+  gap: 0;
+}
+
 .form__input {
   padding-inline: 20px;
   height: 45px;
@@ -553,6 +588,41 @@ i:hover {
   }
 
   .form {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form1 {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form2 {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form3 {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form4 {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form5 {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form6 {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .form7 {
     width: 100%;
     flex-direction: column;
     gap: 10px;
