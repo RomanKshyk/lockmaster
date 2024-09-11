@@ -571,7 +571,7 @@ i:hover {
   }
   .banner__contacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
   .banner__phone {
     font-size: 18px;
@@ -579,8 +579,13 @@ i:hover {
 
   .banner__socials {
     display: flex;
+    justify-content: center;
     gap: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 12px; 
+  }
+
+  .socials-icon {
+    font-size: 32px;
   }
 
   .service__item img {
